@@ -3,20 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06375C8821A4E50E00338E3F /* AppAuthCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06375C8721A4E50E00338E3F /* AppAuthCore.framework */; };
-		0646249B205F026300072191 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0646249A205F026300072191 /* NotificationCenter.framework */; };
-		0646249E205F026300072191 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646249D205F026300072191 /* TodayViewController.swift */; };
-		064624A1205F026300072191 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0646249F205F026300072191 /* MainInterface.storyboard */; };
 		064624A5205F026300072191 /* Example_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 06462499205F026300072191 /* Example_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C607AE42CA3064E008657A0 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AE32CA3064E008657A0 /* AppAuth */; };
+		5C607AE62CA3064E008657A0 /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AE52CA3064E008657A0 /* AppAuthCore */; };
+		5C607AE82CA31188008657A0 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AE72CA31188008657A0 /* AppAuth */; };
+		5C607AEA2CA31188008657A0 /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AE92CA31188008657A0 /* AppAuthCore */; };
+		5C607AEC2CA311C6008657A0 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AEB2CA311C6008657A0 /* AppAuth */; };
+		5C607AEE2CA311C6008657A0 /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AED2CA311C6008657A0 /* AppAuthCore */; };
+		5C607AF12CA31258008657A0 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AF02CA31258008657A0 /* AppAuth */; };
+		5C607AF32CA31258008657A0 /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C607AF22CA31258008657A0 /* AppAuthCore */; };
+		5C607AF42CA3127B008657A0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0646249A205F026300072191 /* NotificationCenter.framework */; };
+		5CC4E9972CA33CDA005E245A /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC4E9962CA33CDA005E245A /* AppAuth */; };
+		5CC4E9992CA33CDA005E245A /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC4E9982CA33CDA005E245A /* AppAuthCore */; };
 		9F265BD11F9AC69300DC14BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F265BC91F9AC69300DC14BF /* Assets.xcassets */; };
 		9F265BD31F9AC69300DC14BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F265BCB1F9AC69300DC14BF /* LaunchScreen.storyboard */; };
 		9F265BD41F9AC69300DC14BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F265BCD1F9AC69300DC14BF /* Main.storyboard */; };
 		9F265BD51F9AC69300DC14BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F265BCF1F9AC69300DC14BF /* AppDelegate.swift */; };
-		9F265BDA1F9AE50400DC14BF /* AppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F265BD91F9AE50400DC14BF /* AppAuth.framework */; };
 		9FD378231FB7C6F800436204 /* AppAuthExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD378221FB7C6F800436204 /* AppAuthExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,33 +39,28 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		064624A9205F026300072191 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 				064624A5205F026300072191 /* Example_Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		06375C8721A4E50E00338E3F /* AppAuthCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppAuthCore.framework; path = Carthage/Build/iOS/AppAuthCore.framework; sourceTree = "<group>"; };
 		06462499205F026300072191 /* Example_Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Example_Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0646249A205F026300072191 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		0646249D205F026300072191 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		064624A0205F026300072191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		064624A2205F026300072191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		064624AD205F034A00072191 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
-		064624AE205F035D00072191 /* Example_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example_Extension.entitlements; sourceTree = "<group>"; };
+		5CC4E9822CA332E0005E245A /* Example_ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Example_ExtensionRelease.entitlements; path = Example_Extension/Example_ExtensionRelease.entitlements; sourceTree = "<group>"; };
 		9F265B971F9AC5D600DC14BF /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F265BC91F9AC69300DC14BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F265BCC1F9AC69300DC14BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F265BCE1F9AC69300DC14BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F265BCF1F9AC69300DC14BF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F265BD01F9AC69300DC14BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F265BD91F9AE50400DC14BF /* AppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppAuth.framework; path = Carthage/Build/iOS/AppAuth.framework; sourceTree = "<group>"; };
 		9FD378221FB7C6F800436204 /* AppAuthExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAuthExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,8 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06375C8821A4E50E00338E3F /* AppAuthCore.framework in Frameworks */,
-				0646249B205F026300072191 /* NotificationCenter.framework in Frameworks */,
+				5C607AF42CA3127B008657A0 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,29 +77,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F265BDA1F9AE50400DC14BF /* AppAuth.framework in Frameworks */,
+				5CC4E9972CA33CDA005E245A /* AppAuth in Frameworks */,
+				5C607AEC2CA311C6008657A0 /* AppAuth in Frameworks */,
+				5C607AE82CA31188008657A0 /* AppAuth in Frameworks */,
+				5C607AE42CA3064E008657A0 /* AppAuth in Frameworks */,
+				5C607AE62CA3064E008657A0 /* AppAuthCore in Frameworks */,
+				5C607AEA2CA31188008657A0 /* AppAuthCore in Frameworks */,
+				5C607AF12CA31258008657A0 /* AppAuth in Frameworks */,
+				5C607AEE2CA311C6008657A0 /* AppAuthCore in Frameworks */,
+				5C607AF32CA31258008657A0 /* AppAuthCore in Frameworks */,
+				5CC4E9992CA33CDA005E245A /* AppAuthCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0646249C205F026300072191 /* Example_Extension */ = {
-			isa = PBXGroup;
-			children = (
-				0646249D205F026300072191 /* TodayViewController.swift */,
-				0646249F205F026300072191 /* MainInterface.storyboard */,
-				064624A2205F026300072191 /* Info.plist */,
-				064624AE205F035D00072191 /* Example_Extension.entitlements */,
-			);
-			path = Example_Extension;
-			sourceTree = "<group>";
-		};
 		9F265B8E1F9AC5D600DC14BF = {
 			isa = PBXGroup;
 			children = (
+				5CC4E9822CA332E0005E245A /* Example_ExtensionRelease.entitlements */,
 				9F265BC81F9AC69300DC14BF /* Source */,
-				0646249C205F026300072191 /* Example_Extension */,
 				9F265BD81F9AE4CA00DC14BF /* Frameworks */,
 				9F265B981F9AC5D600DC14BF /* Products */,
 			);
@@ -131,8 +129,6 @@
 		9F265BD81F9AE4CA00DC14BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06375C8721A4E50E00338E3F /* AppAuthCore.framework */,
-				9F265BD91F9AE50400DC14BF /* AppAuth.framework */,
 				0646249A205F026300072191 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -191,7 +187,6 @@
 				TargetAttributes = {
 					06462498205F026300072191 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -200,7 +195,6 @@
 					};
 					9F265B961F9AC5D600DC14BF = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -218,6 +212,9 @@
 				Base,
 			);
 			mainGroup = 9F265B8E1F9AC5D600DC14BF;
+			packageReferences = (
+				5CC4E9952CA33CDA005E245A /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
+			);
 			productRefGroup = 9F265B981F9AC5D600DC14BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				064624A1205F026300072191 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +263,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "
+";
 		};
 		9F265BDB1F9AE52C00DC14BF /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -282,7 +279,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -291,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0646249E205F026300072191 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0646249F205F026300072191 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				064624A0205F026300072191 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		9F265BCB1F9AC69300DC14BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,15 +336,19 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Example_Extension/Example_Extension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2YLZ4C2M2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example_Extension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.openid.appauth.Example.Example-Extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Wink.login-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -366,18 +359,24 @@
 		064624A7205F026300072191 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Example_Extension/Example_Extension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Example_Extension/Example_ExtensionRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2YLZ4C2M2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example_Extension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.openid.appauth.Example.Example-Extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = winkoauth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,7 +485,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -494,19 +494,24 @@
 		9F265BC01F9AC5D600DC14BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Source/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YLZ4C2M2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Source/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.openid.appauth.Example;
+				INFOPLIST_KEY_CFBundleDisplayName = Example;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = keycloak.oauth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,20 +521,27 @@
 		9F265BC11F9AC5D600DC14BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Source/Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2YLZ4C2M2C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Source/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.openid.appauth.Example;
+				INFOPLIST_KEY_CFBundleDisplayName = Example;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wink.KeycloakApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -566,6 +578,86 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.5;
+			};
+		};
+		5C607AEF2CA31258008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.5;
+			};
+		};
+		5CC4E9952CA33CDA005E245A /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C607AE32CA3064E008657A0 /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		5C607AE52CA3064E008657A0 /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+		5C607AE72CA31188008657A0 /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		5C607AE92CA31188008657A0 /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+		5C607AEB2CA311C6008657A0 /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		5C607AED2CA311C6008657A0 /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AE22CA3064E008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+		5C607AF02CA31258008657A0 /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AEF2CA31258008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		5C607AF22CA31258008657A0 /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C607AEF2CA31258008657A0 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+		5CC4E9962CA33CDA005E245A /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CC4E9952CA33CDA005E245A /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		5CC4E9982CA33CDA005E245A /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CC4E9952CA33CDA005E245A /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F265B8F1F9AC5D600DC14BF /* Project object */;
 }

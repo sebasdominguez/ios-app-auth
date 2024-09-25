@@ -24,22 +24,17 @@ typealias PostRegistrationCallback = (_ configuration: OIDServiceConfiguration?,
 /**
  The OIDC issuer from which the configuration will be discovered.
 */
-let kIssuer: String = "https://issuer.example.com";
+let kIssuer: String = "https://stageauth.winkapis.com/realms/wink";
 
 /**
  The OAuth client ID.
-
- For client configuration instructions, see the [README](https://github.com/openid/AppAuth-iOS/blob/master/Examples/Example-iOS_Swift-Carthage/README.md).
- Set to nil to use dynamic registration with this example.
 */
-let kClientID: String? = "YOUR_CLIENT_ID";
+let kClientID: String? = "sephora";
 
 /**
  The OAuth redirect URI for the client @c kClientID.
-
- For client configuration instructions, see the [README](https://github.com/openid/AppAuth-iOS/blob/master/Examples/Example-iOS_Swift-Carthage/README.md).
 */
-let kRedirectURI: String = "com.example.app:/oauth2redirect/example-provider";
+let kRedirectURI: String = "net.openid.appauthdemo:/oauth2redirect";
 
 /**
  NSCoding key for the authState property.
@@ -349,8 +344,7 @@ extension AppAuthExampleViewController {
                                                                      grantTypes: nil,
                                                                      subjectType: nil,
                                                                      tokenEndpointAuthMethod: "client_secret_post",
-                                                                     additionalParameters: nil,
-                                                                     additionalHeaders: nil)
+                                                                     additionalParameters: nil)
 
         // performs registration request
         self.logMessage("Initiating registration request")
